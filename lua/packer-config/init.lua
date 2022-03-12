@@ -1,0 +1,51 @@
+return require('packer').startup(function()
+  -- Core
+  use 'famiu/nvim-reload'
+  use 'wbthomason/packer.nvim'
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+
+  -- theme-related
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+  use 'EdenEast/nightfox.nvim'
+  use 'gruvbox-community/gruvbox'
+
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  -- Legacy
+  use 'easymotion/vim-easymotion'
+  use 'wellle/targets.vim'
+  use 'tpope/vim-surround'
+  use 'numToStr/Comment.nvim'
+  use 'mg979/vim-visual-multi'
+
+  -- TreeSitter
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use 'windwp/nvim-ts-autotag'
+  use 'p00f/nvim-ts-rainbow'
+  use 'windwp/nvim-autopairs'
+
+  -- CMP Autocomplete
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/vim-vsnip-integ'
+
+  use 'onsails/lspkind-nvim'
+
+  -- LSP
+  use 'neovim/nvim-lspconfig'
+  use 'williamboman/nvim-lsp-installer'
+end)
