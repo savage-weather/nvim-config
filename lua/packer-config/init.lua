@@ -48,5 +48,8 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
 
-  use "lukas-reineke/indent-blankline.nvim"
+  use 'jose-elias-alvarez/null-ls.nvim'
+
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'norcalli/nvim-colorizer.lua'
 end)
