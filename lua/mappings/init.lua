@@ -17,6 +17,12 @@ keymap("n", "<leader>r", ":luafile %<cr>", opts)
 
 keymap('n', '<leader>q', ':q', opts)
 
+-- Comment Remaps
+keymap('n', '<C-_>', 'gcc', term_opts)
+keymap('i', '<C-_>', '<Esc>gcc', term_opts)
+keymap('v', '<C-_>', 'gc', term_opts)
+
+
 -- Insert Mode Remap
 keymap("i", "<A-k>", "<up>", opts)
 keymap("i", "<A-j>", "<down>", opts)
