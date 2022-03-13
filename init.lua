@@ -32,3 +32,6 @@ vim.cmd("highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 
 
 -- Colorizer Config
 require'colorizer'.setup()
+
+-- blankline config
+vim.cmd("highlight IndentBlanklineContextChar guifg=#20cfd4 gui=nocombine")
