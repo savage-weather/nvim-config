@@ -8,7 +8,6 @@ require('autopairs-config')
 require('telescope-config')
 require('lsp')
 require('mappings')
-require('whichkeys-config')
 
 --Color Schemes
 --require('colorschemes-config.nightfox')
