@@ -20,7 +20,6 @@ return require('packer').startup(function(use)
   }
 
   -- Legacy
-  use 'easymotion/vim-easymotion'
   use 'wellle/targets.vim'
   use 'tpope/vim-surround'
   use 'numToStr/Comment.nvim'

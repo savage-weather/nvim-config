@@ -17,6 +17,15 @@ keymap("n", "<leader>r", ":luafile %<cr>", opts)
 
 keymap('n', '<leader>q', ':q', opts)
 
+-- Insert Mode Remap
+keymap("i", "<A-k>", "<up>", opts)
+keymap("i", "<A-j>", "<down>", opts)
+keymap("i", "<C-l>", "<right>", opts)
+keymap("i", "<C-h>", "<left>", opts)
+keymap("i", "<C-j>", "<S-left>", opts)
+keymap("i", "<C-k>", "<S-right>", opts)
+
+
 -- Move Cursor Between Windows
 keymap("n", "<C-j>", "<c-w>j", opts)
 keymap("n", "<C-k>", "<c-w>k", opts)
@@ -33,5 +42,4 @@ keymap('n', '<c-g>', ':Telescope live_grep<cr>', opts)
 keymap('n', '<c-f>', ':Telescope find_files<cr>', opts)
 keymap('n', '<leader>g', ':Telescope live_grep<cr>', opts)
 keymap('n', '<leader>b', ':Telescope buffers<cr>', opts)
-keymap('n', '<leader>w', '<Plug>(easymotion-bd-w)', opts)
 keymap('n', '<leader>S', ':PackerSync', opts)
