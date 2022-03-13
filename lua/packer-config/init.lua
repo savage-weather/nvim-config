@@ -1,6 +1,5 @@
 return require('packer').startup(function(use)
   -- Core
-  use 'famiu/nvim-reload'
   use 'wbthomason/packer.nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
@@ -24,6 +23,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'numToStr/Comment.nvim'
   use 'mg979/vim-visual-multi'
+  use 'unblevable/quick-scope'
 
   -- TreeSitter
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
