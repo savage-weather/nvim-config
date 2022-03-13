@@ -6,6 +6,7 @@ require('lualine-config')
 require('treesitter-config')
 require('autopairs-config')
 require('telescope-config')
+require('blankline-config')
 require('lsp')
 require('mappings')
 
