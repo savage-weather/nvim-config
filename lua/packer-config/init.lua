@@ -1,4 +1,4 @@
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Core
   use 'famiu/nvim-reload'
   use 'wbthomason/packer.nvim'
