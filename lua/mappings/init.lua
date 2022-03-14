@@ -11,6 +11,14 @@ keymap("i", "kk", "<Esc>", opts)
 keymap("i", "kj", "<Esc>", opts)
 keymap("i", "<C-s>", "<Esc>:w<cr>", opts)
 
+-- w,e,b remaps
+keymap("n", "W", "B", opts)
+keymap("n", "E", "W", opts)
+keymap("n", "B", "E", opts)
+keymap("n", "w", "b", opts)
+keymap("n", "e", "w", opts)
+keymap("n", "b", "e", opts)
+
 keymap("n", "_R", ":Reload<cr>", opts)
 keymap("n", "_r", ":luafile %<cr>", opts)
 keymap("n", "<leader>r", ":luafile %<cr>", opts)
