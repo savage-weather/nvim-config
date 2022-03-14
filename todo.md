@@ -1,9 +1,12 @@
-# Todo
+# Todo: Short Term
 
-- Learn Git
-- Learn zsh aliases / snippets -> Just set it up in Neovim terminal
-- Setup Neovim for Java development
-- Learn Lua
+- Learn to compile Java with Neovim
+- Extend VimiumC to use <C-F> like / to find text
+- Script AHK to:
+  - Experiment with onWinActive function
+  - When Youtube has transparency:
+    - Pressing (tab) will alt-tab
+    - Extending the alt-d function to go transparent then alt-tab
 
 # Till the end of March:
 

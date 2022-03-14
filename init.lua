@@ -9,6 +9,7 @@ require("telescope-config")
 require("blankline-config")
 require("lsp")
 require("null-ls-config")
+require("toggleterm-config")
 require("mappings")
 
 --Color Schemes
