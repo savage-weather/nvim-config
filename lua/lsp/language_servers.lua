@@ -6,16 +6,25 @@ local function on_attach(client)
 	client.resolved_capabilities.document_range_formatting = false
 end
 
+local enhance_server_opts = {
+	["sumneko_lua"] = function(opts)
+		opts.settings = {
+			diagnostics = {
+				globals = { "vim" },
+			},
+		}
+	end,
+}
+
 lsp_installer.on_server_ready(function(server)
 	local opts = {
 		on_attach = on_attach,
 		capabilities = capabilities,
 	}
 
-	if server.name == "sumneko_lua" then
-		opts = vim.tbl_deep_extend("force", {
-			settings = { Lua = { diagnostics = { globals = { "vim" } } } },
-		}, opts)
+	if enhance_server_opts[server.name] then
+		-- Enhance the default opts with the server-specific ones
+		enhance_server_opts[server.name](opts)
 	end
 
 	server:setup(opts)
