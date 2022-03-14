@@ -7,9 +7,10 @@ require("treesitter-config")
 require("autopairs-config")
 require("telescope-config")
 require("blankline-config")
+require("toggleterm-config")
 require("lsp")
 require("null-ls-config")
-require("toggleterm-config")
+require("nvim-dap-config")
 require("mappings")
 
 --Color Schemes
