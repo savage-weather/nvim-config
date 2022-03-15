@@ -1,5 +1,6 @@
 # Todo: Short Term
 
+- Learn git merge
 - Make my first snippet in LuaSnip
 - Try to have a method to reflect on ourselves
 

@@ -14,7 +14,7 @@ cmp.setup({
 		end,
 	},
 	mapping = {
-		["<C-b>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }), --> change this, because <c-b> conflicts with tmux
+		["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }), --> change this, because <c-b> conflicts with tmux
 		["<C-f>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
 		["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
 		["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -33,6 +33,13 @@ cmp.setup({
 		format = lspkind.cmp_format({
 			mode = "symbol_text",
 			maxwidth = 50,
+			menu = {
+				buffer = "[Buffer]",
+				nvim_lsp = "[LSP]",
+				luasnip = "[LuaSnip]",
+				nvim_lua = "[Lua]",
+				latex_symbols = "[Latex]",
+			},
 		}),
 	},
 })
