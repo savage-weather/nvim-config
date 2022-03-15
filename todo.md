@@ -1,6 +1,7 @@
 # Todo: Short Term
 
-- Start using LuaSnip
+- Make my first snippet in LuaSnip
+- Try to have a method to reflect on ourselves
 
 # Till the end of March:
 
@@ -10,6 +11,7 @@
 
 # Low Priority
 
+- Tmux environment saved theme
 - Script AHK to:
   - Experiment with onWinActive function
   - When Youtube has transparency:
