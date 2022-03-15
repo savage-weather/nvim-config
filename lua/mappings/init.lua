@@ -37,7 +37,7 @@ keymap("n", "<leader>v", "<c-w>v<c-w>l", opts)
 keymap("n", "<leader>s", "<c-w>s<c-w>j", opts)
 
 ------ Plugins & Leader --------
---
+
 -- Leader Remaps
 keymap("n", "<leader>r", ":luafile %<cr>", opts) --source current lua file
 keymap("n", "<leader>l", ":LspInfo<cr>", opts) --open LspInfo
