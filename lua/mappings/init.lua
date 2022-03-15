@@ -25,7 +25,6 @@ keymap("n", "<leader>r", ":luafile %<cr>", opts)
 keymap("n", "<leader>l", ":LspInfo<cr>", opts)
 
 keymap("n", "<leader>q", ":q", opts)
-keymap("n", "<leader>w", "<Plug>EasyJump", opts)
 
 -- Comment Remaps
 keymap("n", "<C-_>", "gcc", term_opts)
@@ -57,3 +56,7 @@ keymap("n", "<c-f>", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", ":Telescope live_grep<cr>", opts)
 keymap("n", "<leader>b", ":Telescope buffers<cr>", opts)
 keymap("n", "<leader>S", ":PackerSync", opts)
+
+-- EasyMotion
+keymap("n", "f", "<Plug>(easymotion-bd-f)", opts)
+keymap("n", "F", "<Plug>(easymotion-bd-fl)", opts)
