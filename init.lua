@@ -10,7 +10,6 @@ require("blankline-config")
 require("toggleterm-config")
 require("lsp")
 require("null-ls-config")
-require("nvim-dap-config")
 require("mappings")
 
 --Color Schemes

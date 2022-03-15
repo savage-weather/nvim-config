@@ -54,8 +54,4 @@ return require("packer").startup(function(use)
 
 	use("lukas-reineke/indent-blankline.nvim")
 	use("norcalli/nvim-colorizer.lua")
-
-	-- DAP
-	use("mfussenegger/nvim-dap")
-	use("mfussenegger/nvim-jdtls")
 end)
