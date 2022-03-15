@@ -19,6 +19,12 @@ return require("packer").startup(function(use)
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use({
+		"lewis6991/gitsigns.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
 
 	-- Legacy
 	use("wellle/targets.vim")
@@ -41,9 +47,12 @@ return require("packer").startup(function(use)
 	use("hrsh7th/cmp-nvim-lua")
 	use("hrsh7th/nvim-cmp")
 
-	use("hrsh7th/cmp-vsnip")
-	use("hrsh7th/vim-vsnip")
-	use("hrsh7th/vim-vsnip-integ")
+	use("L3MON4D3/LuaSnip")
+	use("saadparwaiz1/cmp_luasnip")
+
+	-- use("hrsh7th/cmp-vsnip")
+	-- use("hrsh7th/vim-vsnip")
+	-- use("hrsh7th/vim-vsnip-integ")
 
 	use("onsails/lspkind-nvim")
 
