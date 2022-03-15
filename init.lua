@@ -17,6 +17,9 @@ require("mappings")
 vim.cmd("colorscheme gruvbox")
 vim.cmd("hi Normal guibg=NONE ctermbg=NONE") --transparent Document bg-color
 vim.cmd(":highlight SignColumn guibg=NONE") --transparent SignColumn
+vim.cmd(":highlight GitSignsAdd guibg=NONE") -- transparent GitSignsAdd
+vim.cmd(":highlight GitSignsChange guibg=NONE")
+vim.cmd(":highlight GitSignsDelete guibg=NONE")
 
 -- Show Diagnostic in Insert Mode
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
