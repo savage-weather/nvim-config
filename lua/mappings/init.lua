@@ -12,7 +12,16 @@ keymap("i", "jk", "<Esc>", opts)
 keymap("i", "kj", "<Esc>", opts)
 keymap("i", "<C-s>", "<Esc>:w<cr>", opts)
 
+-- Visual Mode remaps
+keymap("n", "vv", "viw", opts)
+
 -- w,e,b (Words) remaps
+keymap("v", "W", "B", opts)
+keymap("v", "E", "W", opts)
+keymap("v", "B", "E", opts)
+keymap("v", "w", "b", opts)
+keymap("v", "e", "w", opts)
+keymap("v", "b", "e", opts)
 keymap("n", "W", "B", opts)
 keymap("n", "E", "W", opts)
 keymap("n", "B", "E", opts)
@@ -41,12 +50,14 @@ keymap("n", "<leader>s", "<c-w>s<c-w>j", opts)
 ------ Plugins & Leader --------
 
 -- Leader Remaps
+keymap("n", "<leader>R", ":!lua %<cr>", opts) --source current lua file
 keymap("n", "<leader>r", ":luafile %<cr>", opts) --source current lua file
 keymap("n", "<leader>l", ":LspInfo<cr>", opts) --open LspInfo
 keymap("n", "<leader>q", ":q<cr>", opts) --quit current file
 -- NvimTreeToggle & Telescope
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
+keymap("n", "<c-p>", ":Telescope find_files<cr>", opts)
 keymap("n", "<c-g>", ":Telescope live_grep<cr>", opts)
 keymap("n", "<c-f>", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", ":Telescope live_grep<cr>", opts)

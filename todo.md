@@ -1,6 +1,5 @@
 # Todo: Short Term
 
-- Set gh gd gf for LSP
 - Start using LuaSnip
 
 # Till the end of March:
@@ -16,3 +15,8 @@
   - When Youtube has transparency:
     - Pressing (tab) will alt-tab
     - Extending the alt-d function to go transparent then alt-tab
+
+# Ideas
+
+- Having a custom mode plugin that with a hotkey,
+  transform our insert mode into a numpad layer.
