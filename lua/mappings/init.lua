@@ -6,7 +6,9 @@ vim.g.mapleader = " "
 
 -- Save and Esc remaps
 keymap("n", "<C-s>", ":w<cr>", opts)
+keymap("i", "jj", "<Esc>", opts)
 keymap("i", "kk", "<Esc>", opts)
+keymap("i", "jk", "<Esc>", opts)
 keymap("i", "kj", "<Esc>", opts)
 keymap("i", "<C-s>", "<Esc>:w<cr>", opts)
 
@@ -49,7 +51,7 @@ keymap("n", "<c-g>", ":Telescope live_grep<cr>", opts)
 keymap("n", "<c-f>", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", ":Telescope live_grep<cr>", opts)
 keymap("n", "<leader>b", ":Telescope buffers<cr>", opts)
-keymap("n", "<leader>S", ":PackerSync", opts)
+keymap("n", "<leader>S", ":PackerSync<cr>", opts)
 -- EasyMotion
 keymap("n", "f", "<Plug>(easymotion-bd-f)", opts)
 keymap("n", "F", "<Plug>(easymotion-bd-fl)", opts)
