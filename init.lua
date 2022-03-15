@@ -31,3 +31,6 @@ vim.cmd("highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 
 
 -- Colorizer Config
 require("colorizer").setup()
+
+-- Sneak config
+vim.cmd("let g:sneak#label = 1")

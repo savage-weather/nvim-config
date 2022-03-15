@@ -25,6 +25,7 @@ keymap("n", "<leader>r", ":luafile %<cr>", opts)
 keymap("n", "<leader>l", ":LspInfo<cr>", opts)
 
 keymap("n", "<leader>q", ":q", opts)
+keymap("n", "<leader>w", "<Plug>EasyJump", opts)
 
 -- Comment Remaps
 keymap("n", "<C-_>", "gcc", term_opts)
