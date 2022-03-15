@@ -12,6 +12,8 @@ keymap("i", "jk", "<Esc>", opts)
 keymap("i", "kj", "<Esc>", opts)
 keymap("i", "<C-s>", "<Esc>:w<cr>", opts)
 
+keymap("n", "<C-m>", ":call cursor(0, len(getline('.'))/2)<cr>", opts)
+
 -- Visual Mode remaps
 keymap("n", "vv", "viw", opts)
 
