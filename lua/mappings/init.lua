@@ -41,7 +41,7 @@ keymap("n", "<leader>s", "<c-w>s<c-w>j", opts)
 -- Leader Remaps
 keymap("n", "<leader>r", ":luafile %<cr>", opts) --source current lua file
 keymap("n", "<leader>l", ":LspInfo<cr>", opts) --open LspInfo
-keymap("n", "<leader>q", ":q", opts)
+keymap("n", "<leader>q", ":q<cr>", opts) --quit current file
 -- NvimTreeToggle & Telescope
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
