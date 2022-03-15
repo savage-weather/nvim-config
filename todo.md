@@ -1,5 +1,6 @@
 # Todo: Short Term
 
+- Set gh gd gf for LSP
 - Start using LuaSnip
 
 # Till the end of March:
