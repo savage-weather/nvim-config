@@ -57,6 +57,7 @@ keymap("n", "<leader>s", "<c-w>s<c-w>j", opts)
 ------ Plugins & Leader --------
 
 -- Leader Remaps
+keymap("n", "<leader>j", ":Meh<cr>", nosilent_opts) --source current lua file
 keymap("n", "<leader>R", ":!lua %<cr>", nosilent_opts) --source current lua file
 keymap("n", "<leader>r", ":luafile %<cr>", nosilent_opts) --source current lua file
 keymap("n", "<leader>l", ":LspInfo<cr>", opts) --open LspInfo

@@ -1,3 +1,9 @@
+# Todo: P1:
+
+- Telescrope split window to the right / down with <c-v> <c-x>
+- Install Bufferline
+- Create a vim function that sources multiple files
+
 # Todo: Short Term
 
 - Learn git merge

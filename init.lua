@@ -32,3 +32,15 @@ require("colorizer").setup()
 
 -- Blankline Color
 vim.cmd("highlight IndentBlanklineContextChar guifg=skyblue gui=nocombine")
+
+-- Vim Func
+vim.cmd([[
+fun! DoSomething() "{{{
+  :luafile ~/.config/nvim/lua/luasnip-config/init.lua
+  :luafile ~/.config/nvim/lua/luasnip-config/snippet1.lua
+  :luafile ~/.config/nvim/lua/luasnip-config/snippet2.lua
+  :luafile ~/.config/nvim/lua/lsp/cmp.lua
+endfunction "}}}
+
+command! -nargs=* Meh call DoSomething()
+]])
