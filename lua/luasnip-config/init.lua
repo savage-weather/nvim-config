@@ -1,3 +1,7 @@
+require("luasnip-config/snippet-init")
+require("luasnip-config/snippet1")
+require("luasnip-config/snippet2")
+
 local luasnip = require("luasnip")
 local cmp = require("cmp")
 

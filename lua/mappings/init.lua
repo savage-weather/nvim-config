@@ -15,6 +15,10 @@ keymap("i", "<C-s>", "<Esc>:w<cr>", opts)
 
 keymap("n", "<C-m>", ":call cursor(0, len(getline('.'))/2)<cr>", opts)
 
+-- Yank / Paste mapping
+keymap("n", "gy", '"*y', opts)
+keymap("n", "gp", '"*p', opts)
+
 -- Visual Mode remaps
 keymap("n", "vv", "viw", opts)
 
@@ -72,4 +76,3 @@ keymap("n", "F", "<Plug>(easymotion-bd-fl)", opts)
 -- Codi
 keymap("n", "<leader>c", ":Codi!!<cr>", opts)
 keymap("n", "<leader>C", ":Codi!<cr>", opts)
-keymap("n", "<C-A-j>", ":!echo hello world<cr>", opts)
