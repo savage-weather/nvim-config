@@ -1,7 +1,7 @@
-console.log("Hello Venus");
+const myFunc = (x, y) => {
+  return x + y;
+};
 
-let y = 10;
-let x = 20;
-
-console.log(x + y);
-console.log(x + y + 50);
+console.log(myFunc(10, 5));
+console.log(myFunc(15, 5));
+console.log(myFunc(-1, 5));

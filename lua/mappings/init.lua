@@ -72,3 +72,4 @@ keymap("n", "F", "<Plug>(easymotion-bd-fl)", opts)
 -- Codi
 keymap("n", "<leader>c", ":Codi!!<cr>", opts)
 keymap("n", "<leader>C", ":Codi!<cr>", opts)
+keymap("n", "<leader>h", ":!echo hello world<cr>", opts)
