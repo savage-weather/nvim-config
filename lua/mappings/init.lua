@@ -9,8 +9,6 @@ vim.g.mapleader = " "
 keymap("n", "<C-s>", ":w<cr>", opts)
 keymap("i", "jj", "<Esc>", opts)
 keymap("i", "kk", "<Esc>", opts)
-keymap("i", "jk", "<Esc>", opts)
-keymap("i", "kj", "<Esc>", opts)
 keymap("i", "<C-s>", "<Esc>:w<cr>", opts)
 
 keymap("n", "<C-m>", ":call cursor(0, len(getline('.'))/2)<cr>", opts)
