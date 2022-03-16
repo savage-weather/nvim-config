@@ -1,3 +1,10 @@
 local ls = require("luasnip")
+local s = ls.s
+local i = ls.insert_node
 
-table.insert(ls.snippets.all, ls.parser.parse_snippet("expand", "-- your cock was expanded!"))
+local fmt = require("luasnip.extras.fmt").fmt
+local rep = require("luasnip.extras").rep
+
+local sampleSimppet = s("req", fmt("local {} = require('{}')", { i(1, "default"), rep(1) }))
+
+table.insert(ls.snippets.all, sampleSimppet)
