@@ -20,6 +20,16 @@ vim.keymap.set("i", "<C-k>", function()
 		ls.expand_or_jump()
 	end
 end, { silent = true })
+vim.keymap.set("i", "<C-j>", function()
+	if ls.expand_or_jumpable(-1) then
+		ls.jump(-1)
+	end
+end, { silent = true })
+vim.keymap.set("i", "<C-i>", function()
+	if ls.choice_active then
+		ls.change_choice(1)
+	end
+end)
 
 -- Require Snippets
 require("luasnip-config/snippet1")
