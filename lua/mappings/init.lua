@@ -69,3 +69,6 @@ keymap("n", "<leader>S", ":PackerSync<cr>", opts)
 -- EasyMotion
 keymap("n", "f", "<Plug>(easymotion-bd-f)", opts)
 keymap("n", "F", "<Plug>(easymotion-bd-fl)", opts)
+-- Codi
+keymap("n", "<leader>c", ":Codi!!<cr>", opts)
+keymap("n", "<leader>C", ":Codi!<cr>", opts)
