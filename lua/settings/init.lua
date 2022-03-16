@@ -8,7 +8,7 @@ set.expandtab = true
 set.tabstop = 2
 set.softtabstop = 2
 set.shiftwidth = 2
-vim.wo.signcolumn = 'yes'
+vim.wo.signcolumn = "yes"
 
 set.hlsearch = false
 --vim.opt.paste = [destroy all insert mode remaps]
@@ -22,16 +22,17 @@ set.smartcase = true
 set.wrap = false
 set.scrolloff = 12
 
-set.fileencoding = 'utf-8'
+set.fileencoding = "utf-8"
 set.termguicolors = true
 
 set.hidden = true
 set.swapfile = false
 set.backup = false
 
+set.splitright = true
+set.splitbelow = true
+
 -- Show Diagnostic in Insert Mode
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-  vim.lsp.diagnostic.on_publish_diagnostics, {
-    update_in_insert = true,
-  }
-)
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+	update_in_insert = true,
+})

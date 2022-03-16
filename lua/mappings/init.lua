@@ -49,7 +49,9 @@ keymap("n", "<C-k>", "<c-w>k", opts)
 keymap("n", "<C-h>", "<c-w>h", opts)
 keymap("n", "<C-l>", "<c-w>l", opts)
 -- Split Windows w/ Leader Key
+keymap("n", "<leader>V", "<c-w>v<c-w>l<:Telescope find_files<cr>", opts)
 keymap("n", "<leader>v", "<c-w>v<c-w>l", opts)
+keymap("n", "<leader>S", "<c-w>S<c-w>j<:Telescope find_files<cr>", opts)
 keymap("n", "<leader>s", "<c-w>s<c-w>j", opts)
 
 ------ Plugins & Leader --------
