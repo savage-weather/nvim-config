@@ -67,4 +67,7 @@ return require("packer").startup(function(use)
 
 	-- Codi
 	use("metakirby5/codi.vim")
+
+	-- SubMode
+	use("kana/vim-submode")
 end)
