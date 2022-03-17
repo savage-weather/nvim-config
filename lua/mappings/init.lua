@@ -13,7 +13,12 @@ keymap("i", "<C-s>", "<Esc>:w<cr>", opts)
 
 keymap("n", "<C-m>", ":call cursor(0, len(getline('.'))/2)<cr>", opts)
 
+-- New Lines in Normal Mode
+keymap("n", "<A-o>", "o<Esc>", opts)
+keymap("n", "<A-O>", "O<Esc>", opts)
+
 -- Yank / Paste mapping
+keymap("n", "yp", "yyp", opts)
 keymap("n", "gy", '"*y', opts)
 keymap("n", "gp", '"*p', opts)
 
