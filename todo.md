@@ -1,6 +1,12 @@
 # Todo: P1:
 
+- Check if we can do Custom Actions when picking a file in Telescope
+  -> with that, we can write a special function that will require the files we pick.
+
+# Pending Taks:
+
 - Telescope custom hide and show
+  -> We can build our own Telescope picker.
 
 # Todo Project:
 

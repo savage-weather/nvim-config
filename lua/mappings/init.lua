@@ -83,6 +83,8 @@ keymap("n", "<leader>g", ":Telescope live_grep<cr>", opts)
 keymap("n", "<leader>b", ":Telescope buffers<cr>", opts)
 keymap("n", "<leader>S", ":PackerSync<cr>", opts)
 -- EasyMotion
+keymap("n", "<leader>W", "<Plug>(easymotion-overwin-w)", opts)
+keymap("n", "<leader>w", "<Plug>(easymotion-bd-w)", opts)
 keymap("n", "f", "<Plug>(easymotion-bd-f)", opts)
 keymap("n", "F", "<Plug>(easymotion-bd-fl)", opts)
 -- Codi
