@@ -57,12 +57,16 @@ keymap("n", "<leader>s", "<c-w>s<c-w>j", opts)
 ------ Plugins & Leader --------
 
 -- Leader Remaps
+keymap("n", "<leader>os", ":so Session.vim<cr>", nosilent_opts)
 keymap("n", "<leader>j", ":Meh<cr>", nosilent_opts) --source current lua file
 keymap("n", "<leader>R", ":!lua %<cr>", nosilent_opts) --source current lua file
+keymap("n", "<leader>rr", ":luafile %<cr>", nosilent_opts) --source current lua file
 keymap("n", "<leader>r", ":luafile %<cr>", nosilent_opts) --source current lua file
 keymap("n", "<leader>l", ":LspInfo<cr>", opts) --open LspInfo
 keymap("n", "<leader>q", ":q<cr>", opts) --quit current file
 -- NvimTreeToggle & Telescope
+keymap("n", "<leader>ha", ":lua require('harpoon.mark').add_file()<cr>", opts)
+keymap("n", "<leader>hh", ":lua require('harpoon.ui').toggle_quick_menu()<cr>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
 keymap("n", "<c-p>", ":Telescope find_files<cr>", opts)

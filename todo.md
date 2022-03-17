@@ -1,7 +1,9 @@
 # Todo: P1:
 
-- Learn about saving vim sessions
-- Install Bufferline
+- Autocmd to auto load Session.vim
+- Auto open tmux on terminal open
+- Telescope custom hide and show
+- Learn about engage mode
 
 # Todo: Short Term
 

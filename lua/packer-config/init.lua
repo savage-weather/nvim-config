@@ -14,6 +14,7 @@ return require("packer").startup(function(use)
 	use("gruvbox-community/gruvbox")
 
 	-- Telescope
+	use("ThePrimeagen/harpoon")
 	use({
 		"nvim-telescope/telescope.nvim",
 		requires = { { "nvim-lua/plenary.nvim" } },
