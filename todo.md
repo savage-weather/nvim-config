@@ -1,21 +1,15 @@
 # Todo: P1:
 
-- Autocmd to auto load Session.vim
-- Auto open tmux on terminal open
 - Telescope custom hide and show
-- Learn about engage mode
 
-# Todo: Short Term
+# Todo Project:
 
-- Learn git merge
-- Make my first snippet in LuaSnip
-- Try to have a method to reflect on ourselves
+- Create a plugin / function that pick & save / load vim sessions
 
 # Till the end of March:
 
-- Got good at Git
-- Finish the Data Structures & Algorithms course with IntelliJ
-- Learned basic Lua
+- Learn Git Merge and Git Stash
+- Finish 1 Data Structures & Algorithms course
 
 # Low Priority
 
@@ -28,5 +22,4 @@
 
 # Ideas
 
-- Having a custom mode plugin that with a hotkey,
-  transform our insert mode into a numpad layer.
+- Having a custom mode plugin that with a hotkey

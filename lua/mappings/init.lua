@@ -40,6 +40,7 @@ keymap("i", "<C-_>", "<Esc>gcc", term_opts)
 keymap("v", "<C-_>", "gc", term_opts)
 
 -- Insert Mode Remap
+keymap("i", "<C-u>", "<Esc>viWgUWa", opts)
 keymap("i", "<C-l>", "<right>", opts)
 keymap("i", "<C-h>", "<left>", opts)
 
@@ -57,6 +58,7 @@ keymap("n", "<leader>s", "<c-w>s<c-w>j", opts)
 ------ Plugins & Leader --------
 
 -- Leader Remaps
+keymap("n", "<leader>ms", ":mks! ", nosilent_opts)
 keymap("n", "<leader>os", ":so Session.vim<cr>", nosilent_opts)
 keymap("n", "<leader>j", ":Meh<cr>", nosilent_opts) --source current lua file
 keymap("n", "<leader>R", ":!lua %<cr>", nosilent_opts) --source current lua file
